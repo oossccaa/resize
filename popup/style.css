@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+#app {
+  height: 200px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#app .size {
+  width: 33.333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #037ef3;
+  border: 1px solid #fff;
+}
+#app .size:hover {
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "resizeWindow",
+    "version": "1.0.0",
+    "description": "Chrome extension resize window",
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "browser_action":{
+        "default_icon": "icons/icon32.png",
+        "default_popup": "popup/popup.html"
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content_script/base_script.js"]
+        }
+      ],
+      "background" :{
+          "scripts" :["background/bg.js"],
+          "persistent" : false
+      },
+      "permissions": [
+        "activeTab",
+        "tabs"
+      ]
+}
